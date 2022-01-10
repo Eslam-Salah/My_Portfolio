@@ -604,6 +604,27 @@ body.dark-theme .home::before {
   cursor: pointer;
 }
 
+.projects-box i {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: var(--primary-color);
+  font-size: 25px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transition: var(--transition);
+}
+.projects-box:hover i {
+  opacity: 1;
+}
+
 .projects-box .caption {
   position: absolute;
   bottom: -100%;
